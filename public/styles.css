@@ -1,3 +1,7 @@
+html{
+    background: antiquewhite;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -6,7 +10,6 @@ header{
     font-family: 'Monoton', cursive;
     height: 100px;
     font-size: 45px;
-    background-color: antiquewhite;
     color: black;
     display: flex;
     align-items: center; 
@@ -74,4 +77,44 @@ header{
     font-size: 30px;
     font-weight: 100;
     margin: 20px 0px;
+}
+
+.artist_bio{
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+.artist_bio .avatar span {
+    width: 130px;
+    height: 130px;
+    display: block;
+    margin: 0 auto;
+    background-size: contain !important;
+}
+
+.artist_bio h3 {
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0px
+}
+
+.artist_bio .bio_text {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+
+.albums_list {
+    margin: 20px 200px;
+}
+
+.albums_list:after {
+    clear: both;
+    display: table;
+    content:''
+}
+
+.albums_list > img {
+    float: left;
+    width:50%;
 }
