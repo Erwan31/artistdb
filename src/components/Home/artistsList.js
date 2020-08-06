@@ -10,8 +10,10 @@ const ArtistsList = ({allArtists}) => {
                 key={item.id}
                 to={`/artists/${item.id}`}
                 className="artist_item"
-                style={{background:`/images/covers/${item.cover}.jpg`}}>
-                <div>{item.name}</div>
+                style={{
+                    background: `url('/images/covers/${item.cover}.jpg')` 
+                }}>
+                <div>{item.name}</div> 
             </Link>
         )) 
         : null
